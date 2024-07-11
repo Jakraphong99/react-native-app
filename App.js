@@ -5,7 +5,6 @@ import Register from "./screens/Register";
 import UserPage from "./screens/UserPage";
 import AdminPage from "./screens/AdminPage";
 import LoginScreen from "./screens/LoginScreen";
-import Footer from "./components/Footer";
 
 const Stack = createStackNavigator();
 
@@ -75,12 +74,6 @@ const App = () => {
             },
           }}
         />
-        <Stack.Screen
-          name="Footer"
-          component={Footer}
-          options={{ headerShown: false }}
-        />
-      </Stack.Navigator>
     </NavigationContainer>
   );
 };
